@@ -1,0 +1,85 @@
+@import "src/variables.scss";
+
+.navbar {
+  position: absolute;
+  z-index: 5;
+  //background-color: white;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12vw;
+
+  .logo{
+    cursor: pointer;
+    outline: none;
+    width: 215px;
+    max-width: calc(82vw - 80px);
+    height: 112px;
+    background: url("~src/assets/images/logo-white.png") no-repeat center;
+    background-size: contain;
+  }
+
+  .navbar-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 2vw;
+
+    .links-list {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      align-items: center;
+
+
+      .link {
+        display: flex;
+
+
+        .button-content {
+          text-decoration: initial;
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 1.1875rem;
+          letter-spacing: 0.063rem;
+          text-transform: uppercase;
+          padding: 10px 0;
+          margin-right: 2vw;
+          text-align: center;
+          color: $font-white;
+
+          // TODO: zmienic na active
+          &:hover {
+            color: $color-yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.black {
+  .logo {
+    cursor: pointer;
+    outline: none;
+    width: 215px;
+    max-width: calc(82vw - 80px);
+    height: 112px;
+    background: url("~src/assets/images/logo-black.png") no-repeat center;
+    background-size: contain;
+  }
+
+  .navbar-links-wrapper {
+    .links-list {
+      .link {
+        .button-content {
+          color: $font-grey;
+        }
+      }
+    }
+  }
+}
+

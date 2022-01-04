@@ -1,0 +1,43 @@
+@import "src/variables.scss";
+
+.offer-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 12vw 0;
+}
+
+.content-section {
+  display: flex;
+  padding: 3vh 0 8vh;
+  flex-direction: column;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.icon-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 40px 0 20px;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  background-image: url("~src/assets/images/icon-black.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  text-align: flex-start;
+  line-height: 21px;
+}

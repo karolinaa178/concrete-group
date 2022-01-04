@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg height="100%" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" xmlns:vectornator="http://vectornator.io" version="1.1" viewBox="0 0 220 240">
+<metadata>
+<vectornator:setting key="PencilOnly" value="0"/>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="TimeLapseWatermarkDisabled" value="0"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="DimensionsVisible" value="1"/>
+<vectornator:setting key="OutlineMode" value="0"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="Units" value="Points"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="IsolateActiveLayer" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="doHistoryDisabled" value="0"/>
+</metadata>
+<defs/>
+<g id="Layer 3" vectornator:layerName="Layer 3">
+<path stroke="#000000" stroke-width="14.7261" d="M112.844+15.6875L201.219+67.8125L112.844+15.6875ZM111.844+16.1875L20.2188+68.1562L111.844+16.1875ZM201.281+68.4062L201.281+170.906L201.281+68.4062ZM19.75+68.5312L19.3125+166.5L19.75+68.5312ZM100.969+69.4062L65.5312+91.2812L100.969+69.4062ZM64.9062+91.75L64.3438+128.719L64.9062+91.75ZM66.75+154.562L65.1562+155.375L66.75+154.562ZM19.5312+167.5L107.5+222.781L19.5312+167.5ZM200.844+171.281L107.562+222.594L200.844+171.281Z" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+</svg>

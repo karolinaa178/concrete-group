@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: $font-grey;
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    // line-height: 1.7;
+    // letter-spacing: 0.5px;
+    //overflow-y: scroll;
+  }
+}
