@@ -3,10 +3,21 @@
     <!-- <img src="./assets/images/black-logo.png"> -->
   <div class="navbar-links-wrapper">
     <ul  class="links-list">
-      <li class="link"><a class="button-content" routerLink="/">Start</a></li>
-      <li class="link"><a class="button-content" routerLink="/oferta">Oferta</a></li>
-      <li class="link"><a class="button-content" routerLink="/realizacje">Realizacje</a></li>
-      <li class="link"><a class="button-content" routerLink="/kontakt">Kontakt</a></li>
+      <li class="link">
+        <a class="button-content"
+         routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Start</a>
+      </li>
+      <li class="link">
+        <a class="button-content" routerLink="/oferta" routerLinkActive="active">Oferta</a>
+      </li>
+      <li class="link">
+        <a class="button-content" routerLink="/realizacje" routerLinkActive="active">Realizacje</a>
+      </li>
+      <li class="link">
+        <a class="button-content" routerLink="/kontakt" routerLinkActive="active">Kontakt</a>
+      </li>
     </ul>
   </div>
 </div>

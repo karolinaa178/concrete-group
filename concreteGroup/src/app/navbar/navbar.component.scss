@@ -51,7 +51,7 @@
           color: $font-white;
 
           // TODO: zmienic na active
-          &:hover {
+          &.active {
             color: $color-yellow;
           }
         }

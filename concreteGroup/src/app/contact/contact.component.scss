@@ -1,0 +1,72 @@
+@import "src/variables.scss";
+
+.contact-block {
+  position: relative;
+  height: calc(100vh - 26vh);
+}
+
+.background {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("~src/assets/images/black-background-hex.jpg");
+    overflow: hidden;
+    z-index: -2;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 30vh 12vw 20vh;
+}
+
+.content-wrapper {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: $font-white;
+}
+
+.address-info, .contact-info {
+    margin-top: 3vh;
+}
+
+
+.name-details {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1rem;
+    margin-top: 0.5vh;
+}
+
+.address {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1rem;
+}
+
+.phone {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1rem;
+    margin-bottom: 0.5vh;
+}
+
+.email {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1rem;
+}
+
+.line {
+    background-color: #626262;
+    width: 1px;
+    height: 300px;
+    position: relative;
+    top: -70px;
+  }
