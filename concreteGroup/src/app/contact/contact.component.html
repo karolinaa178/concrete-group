@@ -23,10 +23,65 @@
 
         <div class="line"></div>
 
-        <div class="form-wrapper">
-            <form>
+        <div class="form-content">
+            <h2 class="title">Napisz do nas</h2>
+            <div class="form-wrapper">
+                
+                <form [formGroup]="contactForm">
+                    <div class="form-group">
+                        <div class="name-wrapper-row">
 
-            </form>
+                            <mat-form-field appearance="outline" class="name-field">
+                                <mat-label>Imię</mat-label>
+                                <input matInput
+                                fromControlName="name"
+                                type="text"
+                                required>
+                            </mat-form-field>
+                            
+                            <mat-form-field appearance="outline" class="lastname-field">
+                                <mat-label>Nazwisko</mat-label>
+                                <input matInput
+                                fromControlName="lastname"
+                                type="text"
+                                required>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="contact-data-row">
+                            <mat-form-field appearance="outline" class="email-field">
+                                <mat-label>E-mail</mat-label>
+                                <input matInput
+                                fromControlName="email"
+                                type="email"
+                                required>
+                            </mat-form-field>
+
+                            <mat-form-field appearance="outline" class="phone-field">
+                                <mat-label>Telefon</mat-label>
+                                <input matInput
+                                fromControlName="phone"
+                                type="tel"
+                                required>
+                            </mat-form-field>
+                        </div>
+
+                        <mat-form-field appearance="outline" class="message-field">
+                            <mat-label>Wiadomość</mat-label>
+                            <textarea matInput
+                            fromControlName="message"required></textarea>
+                        </mat-form-field>
+                    </div>
+                </form>
+            </div>
+            <div
+             class="button"
+              mat-raised-button
+              matRipple
+              [matRippleCentered]="true"
+              (click)="onSubmit()">Wyślij</div>
         </div>
+
+
     </div>
 </section>

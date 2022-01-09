@@ -21,7 +21,7 @@
 .content {
     display: flex;
     flex-direction: row;
-    padding: 30vh 12vw 20vh;
+    padding: 20vh 12vw;
 }
 
 .content-wrapper {
@@ -30,6 +30,7 @@
     flex-direction: column;
     width: 30%;
     color: $font-white;
+    padding-top: 5vh;
 }
 
 .address-info, .contact-info {
@@ -64,9 +65,90 @@
 }
 
 .line {
-    background-color: #626262;
+    background-color: $font-grey-light;
     width: 1px;
-    height: 300px;
+    height: 550px;
     position: relative;
-    top: -70px;
+    top: -80px;
   }
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10vw;
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: flex-start;
+    width: 70%;
+}
+.title {
+    color: $font-white;
+}
+
+.name-wrapper-row, .contact-data-row {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    height: 20px;
+}
+
+mat-label {
+    color: $font-white;
+}
+
+.name-field, .email-field {
+    margin-right: 20px;
+}
+
+.name-field, .lastname-field,
+ .phone-field, .email-field {
+    width: 250px;
+}
+
+.message-field {
+    width: 520px;
+}
+
+textarea { 
+    height: 100px;
+}
+
+.button {
+    min-width: 150px;
+    width: fit-content;
+    height: 52px;
+    padding: 3vh 4vw;
+    background-color: $color-yellow;
+    color: $color-black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+}
+
+.mat-input-element {
+    &::ng-deep {
+    caret-color: $color-yellow;
+    color: $font-white;
+  }
+} 
+
+.mat-form-field-appearance-outline {
+    &::ng-deep {
+        .mat-form-field-outline {
+            color: #ffffff;
+        }
+
+        .mat-form-field-outline-thick {
+            color: $color-yellow;
+        }
+    }
+}
+    

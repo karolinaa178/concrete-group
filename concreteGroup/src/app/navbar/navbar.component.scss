@@ -36,7 +36,7 @@
 
       .link {
         display: flex;
-
+        cursor: pointer;
 
         .button-content {
           text-decoration: initial;
@@ -50,7 +50,6 @@
           text-align: center;
           color: $font-white;
 
-          // TODO: zmienic na active
           &.active {
             color: $color-yellow;
           }
