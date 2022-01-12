@@ -1,8 +1,11 @@
 @import "src/variables.scss";
 
 .contact-block {
-  position: relative;
-  height: calc(100vh - 26vh);
+    position: relative;
+
+    @media all and (min-width: $desktop-breakpoint) {
+        height: calc(100vh - 26vh);
+    }
 }
 
 .background {
@@ -13,24 +16,38 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("~src/assets/images/black-background-hex.jpg");
     overflow: hidden;
     z-index: -2;
+    background-image: url("~src/assets/images/black-background-hex.jpg");
+
+    // @media all and (min-width: $desktop-breakpoint) {
+    // }
 }
 
 .content {
     display: flex;
-    flex-direction: row;
-    padding: 20vh 12vw;
+    flex-direction: column;
+    padding: 14vh 6vw 6vh;
+    
+    @media all and (min-width: $desktop-breakpoint) {
+        flex-direction: row;
+        padding: 20vh 12vw;
+    }
 }
 
 .content-wrapper {
     z-index: 1;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 100%;
     color: $font-white;
-    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+    @media all and (min-width: $desktop-breakpoint) {
+        width: 30%;
+        padding-top: 5vh;
+        padding-bottom: unset;
+    }
 }
 
 .address-info, .contact-info {
@@ -65,31 +82,48 @@
 }
 
 .line {
-    background-color: $font-grey-light;
-    width: 1px;
-    height: 550px;
-    position: relative;
-    top: -80px;
+    display: none;
+
+    @media all and (min-width: $desktop-breakpoint) {
+        display: block;
+        background-color: $font-grey-light;
+        width: 1px;
+        height: 550px;
+        position: relative;
+        top: -80px;
+    }
   }
 
 .form-content {
     display: flex;
     flex-direction: column;
-    padding-left: 10vw;
+
+    @media all and (min-width: $desktop-breakpoint) {
+        padding-left: 10vw;
+    }
 }
 
 .form-wrapper {
     display: flex;
     align-items: flex-start;
-    width: 70%;
+    width: 100%;
+
+    @media all and (min-width: $desktop-breakpoint) {
+        width: 70%;
+    }  
 }
+
 .title {
     color: $font-white;
 }
 
 .name-wrapper-row, .contact-data-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    @media all and (min-width: $desktop-breakpoint) {
+      flex-direction: row;  
+    }
 }
 
 input {
@@ -101,16 +135,26 @@ mat-label {
 }
 
 .name-field, .email-field {
-    margin-right: 20px;
+    @media all and (min-width: $desktop-breakpoint) {
+       margin-right: 20px; 
+    }
 }
 
 .name-field, .lastname-field,
  .phone-field, .email-field {
-    width: 250px;
+     width: 86vw;
+
+    @media all and (min-width: $desktop-breakpoint) {
+        width: 250px;
+    }
 }
 
 .message-field {
-    width: 520px;
+    width: 86vw;
+
+    @media all and (min-width: $desktop-breakpoint) {
+        width: 520px;
+    }  
 }
 
 textarea { 

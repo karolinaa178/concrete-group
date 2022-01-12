@@ -5,13 +5,19 @@
 }
 
 .columns-wrapper {
-  padding: 6vh 12vw;
-  background-color: #343434;
+  background-color: $color-grey;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5vh 6vw;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    padding: 6vh 12vw;
+  }
 }
 
-.logo{
+.logo {
   cursor: pointer;
   outline: none;
   width: 215px;
@@ -22,52 +28,82 @@
 }
 
 .line {
-  background-color: #626262;
-  width: 1px;
-  height: 120px;
-  margin-left: 20px;
+  display: none;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    display: block;
+    background-color: #626262;
+    width: 1px;
+    height: 120px;
+    margin-left: 20px;
+  }  
 }
 
 .right-column, .left-column {
-  width: 40%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  color: #a9ada8;
+  color: $font-color-footer;
   font-size: 12px;
   line-height: 16px;
-  padding: 6vh 0 4vh 2vw;
+  padding: 2vh 2vw;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    width: 40%;
+    padding: 4vh 0 4vh 2vw;
+  }  
 }
+
+.right-column {
+  order : 1;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    order: unset;
+  }    
+}
+
+.left-column {
+  @media all and (min-width: $desktop-breakpoint) {
+    padding-left: 10vw;
+  }
+}
+
+.social-media {
+  margin-bottom: 1vh;
+}
+
 
 .links-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   list-style: none;
   margin-bottom: 1vh;
   justify-self: flex-end;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+  }  
 }
 
 .link {
-margin-right: 2.5vw;
+  margin-bottom: 1vh;
 
-  &:last-of-type {
-    margin-right: 0;
-  }
+  @media all and (min-width: $desktop-breakpoint) {
+    margin-bottom: unset;
+    margin-right: 2.5vw;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }  
 
   .button-content {
     text-decoration: initial;
     font-weight: 500;
-    color: #a9ada8;
+    color: $font-color-footer;
 
     &:hover {
       color: $color-yellow;
     }
   }
-}
-
-.left-column {
-  padding-left: 10vw;
-}
-
-.social-media {
-  margin-bottom: 1vh;
 }

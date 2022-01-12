@@ -4,13 +4,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 100px 12vw 0;
+  padding: 9vh 6vw;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    padding: 100px 12vw 0;
+  }
 }
 
 .content-section {
   display: flex;
-  padding: 3vh 0 8vh;
+  padding: 3vh 0 3vh;
   flex-direction: column;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    padding-bottom: 8vh;
+  }
 }
 
 .title {
@@ -25,7 +33,11 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin: 40px 0 20px;
+  margin: 20px 0;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    margin: 40px 0 20px;
+  }
 }
 
 .icon {
