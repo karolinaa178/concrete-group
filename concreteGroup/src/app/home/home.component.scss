@@ -75,3 +75,39 @@
   text-transform: uppercase;
   font-weight: 500;
 }
+
+.icon-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    margin: 40px 0 20px;
+  }
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+  background-image: url("~src/assets/images/icon-black.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.info-block {
+  position: relative;
+}
+
+.about {
+  padding: 9vh 6vw 20vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $font-white;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    padding: 8vh 12vw 8vh;
+    width: 70%;
+  }
+}

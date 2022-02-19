@@ -1,23 +1,23 @@
-<div class="navbar" [ngClass]="{'black': color === ColorTypeEnum.BLACK}">
-  <a class="logo" href=""></a>
-    <!-- <img src="./assets/images/black-logo.png"> -->
-  <div class="navbar-links-wrapper">
-    <ul  class="links-list">
-      <li class="link">
-        <a class="button-content"
-         routerLink="/"
-          routerLinkActive="active"
-          [routerLinkActiveOptions]="{exact: true}">Start</a>
-      </li>
-      <li class="link">
-        <a class="button-content" routerLink="/oferta" routerLinkActive="active">Oferta</a>
-      </li>
-      <li class="link">
-        <a class="button-content" routerLink="/realizacje" routerLinkActive="active">Realizacje</a>
-      </li>
-      <li class="link">
-        <a class="button-content" routerLink="/kontakt" routerLinkActive="active">Kontakt</a>
-      </li>
-    </ul>
-  </div>
-</div>
+<section class="top-nav">
+  <div class="logo"></div>
+
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-button-container">
+    <div class="menu-button"></div>
+  </label>
+
+  <ul class="menu">
+    <li class="link">
+      <a class="button-link"
+       routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact: true}">Start</a>
+    </li>
+    <li class="link">
+      <a class="button-link" routerLink="/realizacje" routerLinkActive="active">Realizacje</a>
+    </li>
+    <li class="link">
+      <a class="button-link" routerLink="/kontakt" routerLinkActive="active">Kontakt</a>
+    </li>
+  </ul>
+</section>

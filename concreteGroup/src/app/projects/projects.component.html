@@ -1,6 +1,17 @@
-<app-navbar [color]="ColorTypeEnum.BLACK"></app-navbar>
 <section class="projects-block">
-  <h1 class="title">Realzacje</h1>
+  <div class="header-background">
+    <h1 class="title">Realzacje</h1>
+  </div>
 
+  <div class="gallery-wrapper">
+
+    <div class="image-list">
+      <div class="image-container" *ngFor="let project of imageList">
+        <img src={{project.image}} />
+        <div class="image-overlay">{{project.name}}</div>
+      </div>
+    </div>
+
+  </div>
 
 </section>

@@ -1,84 +1,142 @@
 @import "src/variables.scss";
 
-.navbar {
-  position: absolute;
-  z-index: 5;
-  //background-color: white;
-  height: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 12vw;
-
-  .logo{
-    cursor: pointer;
-    outline: none;
-    width: 215px;
-    max-width: calc(82vw - 80px);
-    height: 112px;
-    background: url("~src/assets/images/logo-white.png") no-repeat center;
-    background-size: contain;
-  }
-
-  .navbar-links-wrapper {
+.top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 2vw;
-
-    .links-list {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      align-items: center;
-
-
-      .link {
-        display: flex;
-        cursor: pointer;
-
-        .button-content {
-          text-decoration: initial;
-          font-size: 1rem;
-          font-weight: 500;
-          line-height: 1.1875rem;
-          letter-spacing: 0.063rem;
-          text-transform: uppercase;
-          padding: 10px 0;
-          margin-right: 2vw;
-          text-align: center;
-          color: $font-white;
-
-          &.active {
-            color: $color-yellow;
-          }
-        }
-      }
-    }
-  }
+    justify-content: space-between;
+    background-color: $color-grey;
+    color: #fff;
+    height: 80px;
+    padding: 1em 12vw;
+    z-index: 1000;
 }
 
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-.black {
-  .logo {
+.logo {
+    // position: absolute;
+    // top: 0;
+    background-image: url("~src/assets/images/logo-white.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    width: 210px;
+    height: 70px;
+}
+
+.menu > .link {
+    margin: 0 1rem;
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
     cursor: pointer;
-    outline: none;
-    width: 215px;
-    max-width: calc(82vw - 80px);
-    height: 112px;
-    background: url("~src/assets/images/logo-black.png") no-repeat center;
-    background-size: contain;
-  }
-
-  .navbar-links-wrapper {
-    .links-list {
-      .link {
-        .button-content {
-          color: $font-grey;
-        }
-      }
-    }
-  }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.manu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+}
+
+.button-link {
+    text-transform: uppercase;
+    color: $font-white;
+    text-decoration: none;
+}
+
+@media (max-width: $desktop-breakpoint) {
+    .top-nav {
+        padding: 1em;
+    }
+
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu-button-container {
+        display: flex;
+      }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 60px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 500;
+    }
+
+    #menu-toggle ~ .menu .link {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked ~ .menu .link {
+        border: 1px solid #333;
+        height: 3.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu > .link {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+
+    .menu > .link:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+}
