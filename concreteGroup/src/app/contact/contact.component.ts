@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
   // TODO: dodać działający przycisk do formularza aby wysyłało poprawnie
   onSubmit(): void {
     console.log(this.contactForm);
-
+    
   }
 
 }

@@ -28,10 +28,6 @@
 .gallery-wrapper {
   width: 100%;
   padding: 3vh 3vw;
-
-  @media all and (min-width: $desktop-breakpoint) {
-    padding: 12vh 12vw;
-  }
 }
 
 .image-list {
@@ -42,16 +38,11 @@
 }
 
 .image-container {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   transition: transform 500ms;
   position: relative;
   display: block;
-
-  @media all and (min-width: $desktop-breakpoint) {
-    width: 200px;
-    height: 200px;
-  }
 }
 
 .image-container img {
@@ -71,5 +62,16 @@
   img {
     filter: grayscale(0);
     object-fit: contain;
+  }
+}
+
+@media all and (min-width: $desktop-breakpoint) {
+  .gallery-wrapper {
+    padding: 12vh 12vw;
+  }
+
+  .image-container {
+     width: 200px;
+  height: 200px;
   }
 }

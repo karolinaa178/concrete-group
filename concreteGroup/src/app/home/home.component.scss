@@ -101,6 +101,84 @@
 }
 
 .about {
+  padding: 9vh 6vw;
+  display: flex;
+  flex-direction: column;
+  background-color: $font-white;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    padding: 8vh 12vw;
+    // width: 60%;
+  }
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 6vw 4vh;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    padding: 1vh 12vw 8vh;
+  }
+}
+
+.block-container {
+  height: 170px;
+  width: 120px;
+  background-color: grey;
+  border-radius: 5px;
+  margin-bottom: 6vh;
+}
+
+.more-info-block {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.more-info-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("~src/assets/images/black-background-hex.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.offer {
+  padding: 9vh 6vw 20vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  color: $font-white;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    padding: 8vh 12vw 8vh;
+    width: 60%;
+  }
+}
+
+.last-info-block {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+  }
+}
+
+.contact {
   padding: 9vh 6vw 20vh;
   display: flex;
   flex-direction: column;
@@ -108,6 +186,20 @@
 
   @media all and (min-width: $desktop-breakpoint) {
     padding: 8vh 12vw 8vh;
-    width: 70%;
+    width: 60%;
+  }
+}
+
+.helmet-image {
+  background-image: url("~src/assets/images/helmet.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 50%;
+  height: 200px;
+  align-self: center;
+
+  @media all and (min-width: $desktop-breakpoint) {
+    min-height: 300px;
   }
 }
